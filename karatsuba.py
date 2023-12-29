@@ -7,7 +7,7 @@
 # e = (x(high) + x(low))(y(high) +y(low)) - a - d
 # result is x * y = a.10^n + e.10^n/2 + d
 
-# n is length of numbers, 10 is because base 10
+# n, m is length of numbers respectively, 10 is because base 10
 
 def karatsuba(x, y):
     # figure out n:
@@ -27,6 +27,9 @@ def karatsuba(x, y):
     return (a * (10 ** n)) + ((e - d - a) * (10 ** mid)) + d
 
 
-result = karatsuba(12345, 6789)
+if __name__ == "__main__":
+    num1 = 3141592653589793238462643383279502884197169399375105820974944592
+    num2 = 2718281828459045235360287471352662497757247093699959574966967627
 
-print(f"The result is: {result}")
+    result = karatsuba(num1, num2)
+    result2 = num1 * num2
