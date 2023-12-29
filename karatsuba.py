@@ -1,4 +1,4 @@
-# Multiplying 2 n-bit numbers (base 10) - Find x * y = ?
+# Multiplying integer numbers of n, m bit length (base 10) - Find x * y = ?
 # Karatsuba algorithm is to divide the numbers in H (high bits) and L (low bits)
 # Example: 123456 is 123 - H and 456 - L
 # Then:
