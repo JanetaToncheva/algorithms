@@ -33,3 +33,7 @@ if __name__ == "__main__":
 
     result = karatsuba(num1, num2)
     result2 = num1 * num2
+    delta = result - result2
+    print(f"The result is: {result}")
+    print(f"No Karatsuba: {result2}")
+    print(f"Difference: {delta}")
