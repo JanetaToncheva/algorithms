@@ -42,4 +42,8 @@ def count_inversions(array):
 
 
 if __name__ == "__main__":
-    print(count_inversions([1, 3, 5, 2, 4, 0]))
+
+    with open("inversions_many_numbers.txt", "r") as file:
+        lines = file.read().splitlines()
+    many_nums = [int(num) for num in lines]
+    print(count_inversions(many_nums))
