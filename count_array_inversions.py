@@ -1,6 +1,6 @@
 # The goal here is to count array inversions
 # Inversion means an element at a smaller index is bigger than an element at a higher index
-# Example: [4,3,2] - here we have 2 inversions - 4 is bigger than 3 and 2 but is at lower index
+# Example: [4,3,2] - here we have 3 inversions - 4 is bigger than 3 and 2 but is at lower index, also 3 > 2 at lower index
 
 def count_inversions(array):
     # first let's make use of divide and conquer - divide into 2 arrays and count inversions in them
